@@ -6,7 +6,9 @@ namespace zstephens_DataEncodingInCSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            char ch;
+            ch = 'A';
+            Console.WriteLine($"ch is storing the value: {ch}");
         }
     }
 }
