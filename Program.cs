@@ -25,6 +25,22 @@ namespace zstephens_DataEncodingInCSharp
             char b;
             b = (char)('A' + 1);
             Console.WriteLine($"'A' + 1 = '{b}'");
+
+            char z;
+            z = (char)('Z' + 3);
+            Console.WriteLine($"'Z' + 3 = '{z}'");
+
+            char f; 
+            f = (char)('F' - 5);
+            Console.WriteLine($"'F' - 5 = '{f}' ");
+
+            // char Khoor#Zruog$; 
+            // Khoor#Zruog$ = (char)('Khoor#Zruog$' - 3);
+            // Console.WriteLine($"'Khoor#Zruog$' - 3 = '{Khoor#Zruog$}' ");
+
+
+
+
         }
     }
 }
