@@ -46,7 +46,7 @@ namespace zstephens_DataEncodingInCSharp
             Console.WriteLine($"The encyrpted message is: '{encrypted}'");
 
             string decrypted;
-            decrypted = cipher.Encrypt("rosebud");
+            decrypted = cipher.Decrypt(encrypted);
             Console.WriteLine($"The encyrpted message is: '{decrypted}'");
 
 
