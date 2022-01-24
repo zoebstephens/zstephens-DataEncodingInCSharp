@@ -6,6 +6,23 @@ namespace zstephens_DataEncodingInCSharp
     {
         static void Main(string[] args)
         {
+            string filePath = args[0];
+            Console.WriteLine($"Loading '{filePath}'.");
+
+            string message;
+            message = System.IO.File.ReadAllText(filePath);
+            Console.WriteLine($"The encrypted message is: '{message}'.");
+
+            int shift = 1;
+            while (shift<=10)
+            {
+                Cipher cipher;
+                cipher = new Cipher(shift);
+                string decrypt; decrypt = cipher.Decrypt(message);
+                Console.WriteLine($"The decrypted message is: '{decrypt}'");
+                shift = shift + 1;
+            }
+
             // char ch;
             // ch = 'A';
             // Console.WriteLine($"ch is storing the value: {ch}");
@@ -38,19 +55,20 @@ namespace zstephens_DataEncodingInCSharp
             // Khoor#Zruog$ = (char)('Khoor#Zruog$' - 3);
             // Console.WriteLine($"'Khoor#Zruog$' - 3 = '{Khoor#Zruog$}' ");
 
-            Cipher cipher;
-            cipher = new Cipher(5);
+            // Cipher cipher;
+            // cipher = new Cipher(5);
 
-            string encrypted;
-            encrypted = cipher.Encrypt("rosebud");
-            Console.WriteLine($"The encyrpted message is: '{encrypted}'");
+            // string encrypted;
+            // encrypted = cipher.Encrypt("rosebud");
+            // Console.WriteLine($"The encyrpted message is: '{encrypted}'");
 
-            string decrypted;
-            decrypted = cipher.Decrypt(encrypted);
-            Console.WriteLine($"The encyrpted message is: '{decrypted}'");
+            // string decrypted;
+            // decrypted = cipher.Decrypt(encrypted);
+            // Console.WriteLine($"The encyrpted message is: '{decrypted}'");
 
-
-
+            // string message;
+            // message = System.IO.File.ReadAllText(secrets/1.txt);
+            // Console.WriteLine($"The encrypted message is: '{message}'.");
 
         }
     }

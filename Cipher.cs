@@ -22,7 +22,7 @@ public class Cipher
         string newMessage = string.Empty;
         foreach (char c in message)
         {
-            newMessage += (char)(c - shift) ; 
+            newMessage += (char)(c - this.shift) ; 
 
         }
         return newMessage;
@@ -40,7 +40,7 @@ public class Cipher
         {
             //TODO: The following copies the message character by character.
             //      Instead, you should to encrypt each character using the shift
-            newMessage += (char)(c + shift) ; 
+            newMessage += (char)(c + this.shift) ; 
 
         }
         return newMessage;
