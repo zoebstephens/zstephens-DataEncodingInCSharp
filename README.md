@@ -75,7 +75,7 @@ different letters.
 
 What is the minimum number of bits to be able to represent the English alphabet?
 
-** ADD YOUR ANSWER HERE **
+** 5 **
 
 ## Creating a Simple Encoding for Letters
 
@@ -138,10 +138,10 @@ computers. **This little fact about UTF-8 is not important for the AP Exam**
 Using the ASCII Table above, translate each of the following 8-bit binary
 numbers to their ASCII encoding:
 
-* 0b1100_0001 - PUT THE ASCII CHARACTER HERE
-* 0b0010_0000 - PUT THE ASCII CHARACTER HERE
-* 0b0011_1101 -
-* 0b0101_0100 -
+* 0b1100_0001 - 193
+* 0b0010_0000 -  *Space*
+* 0b0011_1101 - = 
+* 0b0101_0100 - T
 
 ## Encoding Text in C#
 
